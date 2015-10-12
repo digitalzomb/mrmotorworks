@@ -21,6 +21,15 @@
 
 </head>
 <body>
+<!-- Facebook API -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!-- <div class="container-fluid nav">
 	<button type="button" class="btn btn-default navbar-left navbtn">About</button>
 	<button type="button" class="btn btn-default navbar-right navbtn">Contact Us</button>
@@ -93,17 +102,20 @@
 				About
 			</button>
 			<button id="location" type="button" class="col-md-4 tab hovereffect tab2">
-				Location
+				People
 			</button>
 			<button id="contactus" type="button" class="col-md-4 tab hovereffect tab3">
-				Contact Us
+				Gallery
 			</button>
+		</div>
+		<div class="row col-md-12">
+			<div class="fb-like" data-href="https://www.facebook.com/mrmotorworks" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 		</div>
 	</div>
 	<div class="row">
-	<div class='garage-row'>
-	<div class="garage-door"><img class='img-responsive' src='./images/garagedoor-resize.png'/></div>
-	</div>
+		<div class='garage-row'>
+			<div class="garage-door"><img class='img-responsive' src='./images/garagedoor-resize.png'/></div>
+		</div>
 	</div>
 	<div class="row">
 		<div class="info about">
@@ -148,7 +160,7 @@ class='google' src="https://www.google.com/maps/embed/v1/place?q=40600+Ann+Arbor
 		<p class='name'>By Email</p>
 		<p class="content">Have questions? Need some work done on a vehicle? Send an email to <a href="mailto:mrmotor@mrmotorworks.com" target="_top">mrmotor@mrmotorworks.com</a> and we'll respond as soon as we can.</p>
 		<p class='name'>By Phone</p>
-		<p class='content'>Unfortunately we do not have a business phone number just yet. You may call Matt at <span class='bold-me'><a href="tel:734-673-4573">734-673-4573</a></span>.
+		<p class='content'>Give us a call at <span class='bold-me'><a href="tel:734-335-7901">734-335-7901</a></span>.
 		</div>
 		</div>
 	</div>
